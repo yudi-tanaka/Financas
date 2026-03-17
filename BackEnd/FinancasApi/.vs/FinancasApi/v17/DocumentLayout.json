@@ -1,0 +1,187 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\PROJETOS_LOCAL\\DESAFIO\\Financas\\BackEnd\\FinancasApi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0C5DD1A7-BCB1-40B3-91D1-0B6ECAEBDB97}|FinancasApi\\FinancasApi.csproj|c:\\projetos_local\\desafio\\financas\\backend\\financasapi\\financasapi\\models\\dtos\\categoriatotaisdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C5DD1A7-BCB1-40B3-91D1-0B6ECAEBDB97}|FinancasApi\\FinancasApi.csproj|solutionrelative:financasapi\\models\\dtos\\categoriatotaisdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C5DD1A7-BCB1-40B3-91D1-0B6ECAEBDB97}|FinancasApi\\FinancasApi.csproj|c:\\projetos_local\\desafio\\financas\\backend\\financasapi\\financasapi\\models\\dtos\\relatoriocategoriadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C5DD1A7-BCB1-40B3-91D1-0B6ECAEBDB97}|FinancasApi\\FinancasApi.csproj|solutionrelative:financasapi\\models\\dtos\\relatoriocategoriadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C5DD1A7-BCB1-40B3-91D1-0B6ECAEBDB97}|FinancasApi\\FinancasApi.csproj|c:\\projetos_local\\desafio\\financas\\backend\\financasapi\\financasapi\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C5DD1A7-BCB1-40B3-91D1-0B6ECAEBDB97}|FinancasApi\\FinancasApi.csproj|solutionrelative:financasapi\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C5DD1A7-BCB1-40B3-91D1-0B6ECAEBDB97}|FinancasApi\\FinancasApi.csproj|c:\\projetos_local\\desafio\\financas\\backend\\financasapi\\financasapi\\migrations\\20260313141210_inicialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C5DD1A7-BCB1-40B3-91D1-0B6ECAEBDB97}|FinancasApi\\FinancasApi.csproj|solutionrelative:financasapi\\migrations\\20260313141210_inicialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C5DD1A7-BCB1-40B3-91D1-0B6ECAEBDB97}|FinancasApi\\FinancasApi.csproj|c:\\projetos_local\\desafio\\financas\\backend\\financasapi\\financasapi\\models\\pessoa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C5DD1A7-BCB1-40B3-91D1-0B6ECAEBDB97}|FinancasApi\\FinancasApi.csproj|solutionrelative:financasapi\\models\\pessoa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C5DD1A7-BCB1-40B3-91D1-0B6ECAEBDB97}|FinancasApi\\FinancasApi.csproj|c:\\projetos_local\\desafio\\financas\\backend\\financasapi\\financasapi\\controllers\\pessoacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C5DD1A7-BCB1-40B3-91D1-0B6ECAEBDB97}|FinancasApi\\FinancasApi.csproj|solutionrelative:financasapi\\controllers\\pessoacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C5DD1A7-BCB1-40B3-91D1-0B6ECAEBDB97}|FinancasApi\\FinancasApi.csproj|c:\\projetos_local\\desafio\\financas\\backend\\financasapi\\financasapi\\controllers\\transacaocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C5DD1A7-BCB1-40B3-91D1-0B6ECAEBDB97}|FinancasApi\\FinancasApi.csproj|solutionrelative:financasapi\\controllers\\transacaocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C5DD1A7-BCB1-40B3-91D1-0B6ECAEBDB97}|FinancasApi\\FinancasApi.csproj|c:\\projetos_local\\desafio\\financas\\backend\\financasapi\\financasapi\\models\\transacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C5DD1A7-BCB1-40B3-91D1-0B6ECAEBDB97}|FinancasApi\\FinancasApi.csproj|solutionrelative:financasapi\\models\\transacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C5DD1A7-BCB1-40B3-91D1-0B6ECAEBDB97}|FinancasApi\\FinancasApi.csproj|c:\\projetos_local\\desafio\\financas\\backend\\financasapi\\financasapi\\models\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C5DD1A7-BCB1-40B3-91D1-0B6ECAEBDB97}|FinancasApi\\FinancasApi.csproj|solutionrelative:financasapi\\models\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C5DD1A7-BCB1-40B3-91D1-0B6ECAEBDB97}|FinancasApi\\FinancasApi.csproj|c:\\projetos_local\\desafio\\financas\\backend\\financasapi\\financasapi\\controllers\\categoriacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C5DD1A7-BCB1-40B3-91D1-0B6ECAEBDB97}|FinancasApi\\FinancasApi.csproj|solutionrelative:financasapi\\controllers\\categoriacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CategoriaTotaisDto.cs",
+              "DocumentMoniker": "C:\\PROJETOS_LOCAL\\DESAFIO\\Financas\\BackEnd\\FinancasApi\\FinancasApi\\Models\\DTOs\\CategoriaTotaisDto.cs",
+              "RelativeDocumentMoniker": "FinancasApi\\Models\\DTOs\\CategoriaTotaisDto.cs",
+              "ToolTip": "C:\\PROJETOS_LOCAL\\DESAFIO\\Financas\\BackEnd\\FinancasApi\\FinancasApi\\Models\\DTOs\\CategoriaTotaisDto.cs",
+              "RelativeToolTip": "FinancasApi\\Models\\DTOs\\CategoriaTotaisDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAUAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-17T17:12:39.313Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RelatorioCategoriaDto.cs",
+              "DocumentMoniker": "C:\\PROJETOS_LOCAL\\DESAFIO\\Financas\\BackEnd\\FinancasApi\\FinancasApi\\Models\\DTOs\\RelatorioCategoriaDto.cs",
+              "RelativeDocumentMoniker": "FinancasApi\\Models\\DTOs\\RelatorioCategoriaDto.cs",
+              "ToolTip": "C:\\PROJETOS_LOCAL\\DESAFIO\\Financas\\BackEnd\\FinancasApi\\FinancasApi\\Models\\DTOs\\RelatorioCategoriaDto.cs",
+              "RelativeToolTip": "FinancasApi\\Models\\DTOs\\RelatorioCategoriaDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-17T17:12:29.87Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\PROJETOS_LOCAL\\DESAFIO\\Financas\\BackEnd\\FinancasApi\\FinancasApi\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "FinancasApi\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\PROJETOS_LOCAL\\DESAFIO\\Financas\\BackEnd\\FinancasApi\\FinancasApi\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "FinancasApi\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAqwBsAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T20:20:55.332Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "20260313141210_InicialCreate.cs",
+              "DocumentMoniker": "C:\\PROJETOS_LOCAL\\DESAFIO\\Financas\\BackEnd\\FinancasApi\\FinancasApi\\Migrations\\20260313141210_InicialCreate.cs",
+              "RelativeDocumentMoniker": "FinancasApi\\Migrations\\20260313141210_InicialCreate.cs",
+              "ToolTip": "C:\\PROJETOS_LOCAL\\DESAFIO\\Financas\\BackEnd\\FinancasApi\\FinancasApi\\Migrations\\20260313141210_InicialCreate.cs",
+              "RelativeToolTip": "FinancasApi\\Migrations\\20260313141210_InicialCreate.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T20:14:20.82Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Transacao.cs",
+              "DocumentMoniker": "C:\\PROJETOS_LOCAL\\DESAFIO\\Financas\\BackEnd\\FinancasApi\\FinancasApi\\Models\\Transacao.cs",
+              "RelativeDocumentMoniker": "FinancasApi\\Models\\Transacao.cs",
+              "ToolTip": "C:\\PROJETOS_LOCAL\\DESAFIO\\Financas\\BackEnd\\FinancasApi\\FinancasApi\\Models\\Transacao.cs",
+              "RelativeToolTip": "FinancasApi\\Models\\Transacao.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T19:58:11.448Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Categoria.cs",
+              "DocumentMoniker": "C:\\PROJETOS_LOCAL\\DESAFIO\\Financas\\BackEnd\\FinancasApi\\FinancasApi\\Models\\Categoria.cs",
+              "RelativeDocumentMoniker": "FinancasApi\\Models\\Categoria.cs",
+              "ToolTip": "C:\\PROJETOS_LOCAL\\DESAFIO\\Financas\\BackEnd\\FinancasApi\\FinancasApi\\Models\\Categoria.cs",
+              "RelativeToolTip": "FinancasApi\\Models\\Categoria.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T19:57:07.728Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Pessoa.cs",
+              "DocumentMoniker": "C:\\PROJETOS_LOCAL\\DESAFIO\\Financas\\BackEnd\\FinancasApi\\FinancasApi\\Models\\Pessoa.cs",
+              "RelativeDocumentMoniker": "FinancasApi\\Models\\Pessoa.cs",
+              "ToolTip": "C:\\PROJETOS_LOCAL\\DESAFIO\\Financas\\BackEnd\\FinancasApi\\FinancasApi\\Models\\Pessoa.cs",
+              "RelativeToolTip": "FinancasApi\\Models\\Pessoa.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T19:55:09.866Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PessoaController.cs",
+              "DocumentMoniker": "C:\\PROJETOS_LOCAL\\DESAFIO\\Financas\\BackEnd\\FinancasApi\\FinancasApi\\Controllers\\PessoaController.cs",
+              "RelativeDocumentMoniker": "FinancasApi\\Controllers\\PessoaController.cs",
+              "ToolTip": "C:\\PROJETOS_LOCAL\\DESAFIO\\Financas\\BackEnd\\FinancasApi\\FinancasApi\\Controllers\\PessoaController.cs",
+              "RelativeToolTip": "FinancasApi\\Controllers\\PessoaController.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAowC4AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T19:45:45.667Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CategoriaController.cs",
+              "DocumentMoniker": "C:\\PROJETOS_LOCAL\\DESAFIO\\Financas\\BackEnd\\FinancasApi\\FinancasApi\\Controllers\\CategoriaController.cs",
+              "RelativeDocumentMoniker": "FinancasApi\\Controllers\\CategoriaController.cs",
+              "ToolTip": "C:\\PROJETOS_LOCAL\\DESAFIO\\Financas\\BackEnd\\FinancasApi\\FinancasApi\\Controllers\\CategoriaController.cs",
+              "RelativeToolTip": "FinancasApi\\Controllers\\CategoriaController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T19:43:31.696Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TransacaoController.cs",
+              "DocumentMoniker": "C:\\PROJETOS_LOCAL\\DESAFIO\\Financas\\BackEnd\\FinancasApi\\FinancasApi\\Controllers\\TransacaoController.cs",
+              "RelativeDocumentMoniker": "FinancasApi\\Controllers\\TransacaoController.cs",
+              "ToolTip": "C:\\PROJETOS_LOCAL\\DESAFIO\\Financas\\BackEnd\\FinancasApi\\FinancasApi\\Controllers\\TransacaoController.cs",
+              "RelativeToolTip": "FinancasApi\\Controllers\\TransacaoController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAC8AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T19:39:38.107Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
