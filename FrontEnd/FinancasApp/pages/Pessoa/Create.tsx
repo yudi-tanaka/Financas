@@ -2,6 +2,8 @@ import { useState } from 'react'
 import { postPessoa, type Pessoa} from '../../services/Pessoa'
 import Breadcrumbs from '../../components/Breadcrumbs'
 
+import * as S from '../../style/style'
+
 export default function Create() {
     const [nome, setNome] = useState('')
     const [idade, setIdade] = useState(0)
@@ -10,6 +12,18 @@ export default function Create() {
 
     async function handleSubmit(event: React.FormEvent) {
         event.preventDefault()
+
+        if(idade <= 0 || idade >= 150){
+            setError('A idade deve ser um número entre 1 e 150');
+            return;
+        }
+
+        if([nome, idade].some(field => field === '' || field === 0)){
+            setError('Todos os campos são obrigatórios');
+            return;
+        }
+
+
         try {
             setLoading(true);
             setError(null);
@@ -38,31 +52,30 @@ export default function Create() {
 
 
     return(
-        <div>
+        <S.Container>
             <Breadcrumbs
               items={[
                 { label: 'Home', to: '/' },
                 { label: 'Pessoas', to: '/pessoa' },
-                { label: 'Criar Pessoa' },
+                { label: 'Nova Pessoa' },
               ]}
             />
-            <h1>Criar Pessoa</h1>
+            <S.Title>Nova Pessoa</S.Title>
 
             <form onSubmit={handleSubmit}>
                 <div>
-                    <label>Nome:</label>
-                    <input type="text" value={nome} onChange={e => setNome(e.target.value)} required />
+                    <S.Label htmlFor="nome">Nome:</S.Label>
+                    <S.Input type="text" id="nome" value={nome} onChange={e => setNome(e.target.value)} required />
                 </div>
                 <div>
-                    <label>Idade:</label>
-                    <input type="number" value={idade} onChange={e => setIdade(Number(e.target.value))} required />
-
+                    <S.Label htmlFor="idade">Idade:</S.Label>
+                    <S.Input type="number" id="idade" value={idade} onChange={e => setIdade(Number(e.target.value))} required />
                 </div>
-                <button type="submit" disabled={loading}>
+                <S.Button type="submit" disabled={loading}>
                     {loading ? 'Salvando...' : 'Salvar'}
-                </button>
-                {error && <p style={{color: 'red'}}>Erro: {error}</p>}
+                </S.Button>
+                {error && <S.ErrorMessage>Erro: {error}</S.ErrorMessage>}
             </form>
-        </div>
+        </S.Container>
     )
 }

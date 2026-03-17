@@ -12,6 +12,12 @@ export const Title = styled.h1`
     color: #333;
 `;
 
+export const Subtitle = styled.h2`
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #555;
+`;
+
 export const Button = styled.button`
     background-color: #007bff;
     color: white;
@@ -19,7 +25,6 @@ export const Button = styled.button`
     padding: 10px 20px;
     border-radius: 4px;
     cursor: pointer;
-    margin-bottom: 20px;
 
     &:hover {
         background-color: #0056b3;
@@ -32,13 +37,13 @@ export const Table = styled.table`
 
     th, td {
         border: 1px solid #ddd;
-        padding: 8px;
+        padding: 3px;
+        text-align: center;
     };
 `;
 
 export const TableHeader = styled.th`
     background-color: #d4d4d4;
-    text-align: left;
 `;
 
 
@@ -49,6 +54,7 @@ export const Input = styled.input`
     border-radius: 4px; 
     margin-bottom: 20px;
     width: 100%;
+    box-sizing: border-box;
 `;
 
 export const Select = styled.select`
@@ -67,10 +73,61 @@ export const ErrorMessage = styled.p`
 
 export const DisplayFlex = styled.div`
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     gap: 10px;
 `;
+
+export const Label = styled.label`
+    display: block; 
+    margin-bottom: 5px;
+`;
+
+
+
+export const Grid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+
+  @media (max-width: 992px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 576px) {
+    grid-template-columns: 1fr;
+  }
+`
+
+export const Card = styled.div`
+  height: 150px;
+  background: #0d6efd;
+  color: white;
+  border-radius: 12px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  transition: 0.2s;
+
+  &:hover {
+    background: #0b5ed7;
+    transform: translateY(-3px);
+  }
+`
+
+export const Icon = styled.div`
+  font-size: 28px;
+  margin-bottom: 8px;
+`
+
+export const Text = styled.span`
+  font-size: 14px;
+  font-weight: 500;
+`
 
     
     

@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { postCategoria, type Categoria} from '../../services/Categoria'
 import Breadcrumbs from '../../components/Breadcrumbs'
+import * as S from '../../style/style'
 
 export default function Create() {
     const [descricao, setDescricao] = useState('');
@@ -10,6 +11,12 @@ export default function Create() {
 
     async function handleSubmit(event: React.FormEvent) {
         event.preventDefault();
+
+        if([descricao, finalidade].some(field => field === '')){
+            setError('Todos os campos são obrigatórios');
+            return; 
+        }
+
         try {
         
             setLoading(true);
@@ -37,7 +44,7 @@ export default function Create() {
     }
 
   return (
-    <div>
+    <S.Container>
         <Breadcrumbs
           items={[
             { label: 'Home', to: '/' },
@@ -45,26 +52,26 @@ export default function Create() {
             { label: 'Nova Categoria' },
           ]}
         />
-        <h1>Nova Categoria</h1>
+        <S.Title>Nova Categoria</S.Title>
         <form onSubmit={handleSubmit}>
             <div>
-                <label>Descrição:</label>
-                <input type="text" value={descricao} onChange={e => setDescricao(e.target.value)} required />
+                <S.Label htmlFor="descricao">Descrição:</S.Label>
+                <S.Input type="text" id="descricao" value={descricao} onChange={e => setDescricao(e.target.value)} required />
             </div>
             <div>
-                <label>Finalidade:</label>
-                <select value={finalidade} onChange={e => setFinalidade(e.target.value as 'Despesa' | 'Receita')} required>
+                <S.Label htmlFor="finalidade">Finalidade:</S.Label>
+                <S.Select id="finalidade" value={finalidade} onChange={e => setFinalidade(e.target.value as 'Despesa' | 'Receita')} required>
                     <option value="Despesa">Despesa</option>
                     <option value="Receita">Receita</option>
-                </select>
+                </S.Select>
             </div>
 
-            <button type="submit" disabled={loading}>
+            <S.Button type="submit" disabled={loading}>
                 {loading ? 'Salvando...' : 'Salvar'}
-            </button>
+            </S.Button>
 
-            {error && <p style={{color: 'red'}}>Erro: {error}</p>}
+            {error && <S.ErrorMessage>Erro: {error}</S.ErrorMessage>}
         </form>
-    </div>
+    </S.Container>
   )
 }

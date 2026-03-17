@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom'
 import * as S from '../style/style'
+import { FaUsers , FaUser, FaTags , FaTag, FaExchangeAlt   } from 'react-icons/fa'
 
 
 export default function Home() {
@@ -12,13 +13,36 @@ export default function Home() {
     return (
         <S.Container>
             <S.Title>Finanças</S.Title>
-            <S.DisplayFlex>
-                <S.Button onClick={() => goTo('Pessoa')}>Pessoas</S.Button>
-                <S.Button onClick={() => goTo('Categoria')}>Categorias</S.Button>
-                <S.Button onClick={() => goTo('Transacao')}>Transações</S.Button>
-                <S.Button onClick={() => goTo('Relatorio/porpessoa')}>Relatório por Pessoa</S.Button>
-                <S.Button onClick={() => goTo('Relatorio/porcategoria')}>Relatório por Categoria</S.Button>
-            </S.DisplayFlex>
+
+            <S.Subtitle>Cadastros</S.Subtitle>
+            <S.Grid>
+                <S.Card onClick={() => goTo('Pessoa')}>
+                    <S.Icon><FaUsers  /></S.Icon>
+                    <S.Text>Pessoas</S.Text>
+                </S.Card>
+                <S.Card onClick={() => goTo('Categoria')}>
+                    <S.Icon><FaTags /></S.Icon>
+                    <S.Text>Categorias</S.Text>
+                </S.Card>
+                <S.Card onClick={() => goTo('Transacao')}>
+                    <S.Icon><FaExchangeAlt /></S.Icon>
+                    <S.Text>Transações</S.Text>
+                </S.Card>
+            </S.Grid>
+
+            <S.Subtitle>Relatórios</S.Subtitle>
+
+            <S.Grid>
+                <S.Card onClick={() => goTo('Relatorio/porpessoa')}>
+                    <S.Icon><FaUser  /></S.Icon>
+                    <S.Text>Relatório por Pessoa</S.Text>
+                </S.Card>
+                <S.Card onClick={() => goTo('Relatorio/porcategoria')}>
+                    <S.Icon><FaTag /></S.Icon>
+                    <S.Text>Relatório por Categoria</S.Text>
+                </S.Card>
+            </S.Grid>
+
         </S.Container>
     )
 }

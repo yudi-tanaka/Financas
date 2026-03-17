@@ -2,6 +2,7 @@ import { useState, useEffect } from "react"
 import { getRelatorioPorPessoa, type RelatorioPorPessoa } from "../../services/Relatorio"
 
 import Breadcrumbs from "../../components/Breadcrumbs"
+import * as S from "../../style/style"
 
 
 export default function PorPessoa(){
@@ -13,7 +14,7 @@ export default function PorPessoa(){
 
 
     return(
-        <div>
+        <S.Container>
             <Breadcrumbs
               items={[
                 { label: 'Home', to: '/' },
@@ -21,10 +22,10 @@ export default function PorPessoa(){
               ]}
             />
 
-            <h1>Relatório por Pessoa</h1>
+            <S.Title>Relatório por Pessoa</S.Title>
 
-            <table>
-                <thead>
+            <S.Table>
+                <thead style={{backgroundColor: "#d4d4d4"}}>
                     <tr>
                         <th>Nome</th>
                         <th>Total de Receitas</th>
@@ -42,14 +43,14 @@ export default function PorPessoa(){
                         </tr>
                     ))}
 
-                    <tr>
+                    <tr style={{backgroundColor: "#91D06C"}}>
                         <td><strong>Total Geral</strong></td>
                         <td><strong>{relatorio?.totalGeral.totalReceita.toFixed(2)}</strong></td>
                         <td><strong>{relatorio?.totalGeral.totalDespesa.toFixed(2)}</strong></td>
                         <td><strong>{relatorio?.totalGeral.saldo.toFixed(2)}</strong></td>
                     </tr>
                 </tbody>
-            </table>
-        </div>
+            </S.Table>
+        </S.Container>
     )
 }

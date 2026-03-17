@@ -1,6 +1,7 @@
 import {useState, useEffect} from 'react'
 import { useNavigate } from 'react-router-dom'
 import Breadcrumbs from '../../components/Breadcrumbs'
+import * as S from '../../style/style'
 
 
 import {
@@ -41,21 +42,20 @@ export default function Pessoa(){
 
     return(
 
-        <div>
+        <S.Container>
             <Breadcrumbs
               items={[
                 { label: 'Home', to: '/' },
                 { label: 'Pessoas' },
               ]}
             />
-            <h1>Pessoas</h1>
+            <S.Title>Pessoas</S.Title>
 
-            <button onClick={() => navigate('/pessoa/create')}>Nova Pessoa</button>
-
-            <table>
-                <thead>
+            <S.Button style={{marginBottom: 10}} onClick={() => navigate('/pessoa/create')}>Nova Pessoa</S.Button>
+            
+            <S.Table>
+                <thead style={{backgroundColor: "#d4d4d4"}}>
                     <tr>
-                        <th>Id</th>
                         <th>Nome</th>
                         <th>Idade</th>
                         <th>Ações</th>
@@ -64,19 +64,20 @@ export default function Pessoa(){
                 <tbody>
                     {pessoas.map(pessoa => (
                         <tr key={pessoa.id}>
-                            <td>{pessoa.id}</td>
                             <td>{pessoa.nome}</td>
                             <td>{pessoa.idade}</td>
                             <td>
-                                <button onClick={() => navigate(`/pessoa/update/${pessoa.id}`)}>Editar</button>
-                                <button onClick={() => deletarPessoa(pessoa.id)} disabled={loading}>
-                                    {loading ? 'Deletando...' : 'Deletar'}
-                                </button>
+                                <S.DisplayFlex>
+                                    <S.Button onClick={() => navigate(`/pessoa/update/${pessoa.id}`)}>Editar</S.Button>
+                                    <S.Button style={{backgroundColor: 'red'}} onClick={() => deletarPessoa(pessoa.id)} disabled={loading}>
+                                        {loading ? 'Deletando...' : 'Deletar'}
+                                    </S.Button>
+                                </S.DisplayFlex>
                             </td>
                         </tr>
                     ))}
                 </tbody>
-            </table>
-        </div>
+            </S.Table>
+        </S.Container>
     )
 }

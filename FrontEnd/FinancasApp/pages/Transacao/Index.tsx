@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import {getTransacoes, type Transacao} from '../../services/Transacao'
 import { useNavigate } from 'react-router-dom'
+import * as S from '../../style/style'
 
 import Breadcrumbs from '../../components/Breadcrumbs'
 
@@ -16,7 +17,7 @@ export default function Transacao() {
 
 
   return (
-    <div>
+    <S.Container>
         <Breadcrumbs
           items={[
             { label: 'Home', to: '/' },
@@ -24,13 +25,13 @@ export default function Transacao() {
           ]}
         />
 
-      <h1>Transações</h1>
+      <S.Title>Transações</S.Title>
 
-      <button onClick={() => navigate('/transacao/create')}>Nova Transação</button>
-      <table>
-        <thead>
+      <S.Button style={{marginBottom: 10}} onClick={() => navigate('/transacao/create')}>Nova Transação</S.Button>
+      <S.Table>
+        <thead style={{backgroundColor: "#d4d4d4"}}>
             <tr>
-                <th>Id</th>
+                
                 <th>Descricao</th>
                 <th>Valor</th>
                 <th>Tipo</th>
@@ -40,7 +41,7 @@ export default function Transacao() {
         <tbody>
           {transacoes.map((transacao) => (
             <tr key={transacao.id}>
-              <td>{transacao.id}</td>
+              
               <td>{transacao.descricao}</td>
               <td>{transacao.valor}</td>
               <td>{transacao.tipo}</td>
@@ -48,7 +49,7 @@ export default function Transacao() {
             </tr>
           ))}
         </tbody>
-      </table>
-    </div>  
+      </S.Table>
+    </S.Container>  
   )
 }

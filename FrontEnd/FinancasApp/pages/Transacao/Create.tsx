@@ -3,6 +3,7 @@ import { postTransacao, type Transacao} from '../../services/Transacao'
 import { getPessoas, type Pessoa } from '../../services/Pessoa'
 import { getCategorias, type Categoria } from '../../services/Categoria'
 import Breadcrumbs from '../../components/Breadcrumbs'
+import * as S from '../../style/style'
 
 
 export default function Create(){
@@ -46,6 +47,17 @@ export default function Create(){
 
     async function handleSubmit(event: React.FormEvent){
         event.preventDefault();
+
+        if(valor <= 0){
+            setError('O valor deve ser maior que zero');
+            return;
+        }
+
+        if([descricao, valor, tipo, categoria, pessoaId].some(field => field === '' || field === 0)){
+            setError('Todos os campos são obrigatórios');
+            return;
+        }
+
         try{
             setLoading(true);
             setError(null);
@@ -81,7 +93,7 @@ export default function Create(){
     }
 
     return (
-        <div>
+        <S.Container>
             <Breadcrumbs
               items={[
                 { label: 'Home', to: '/' },
@@ -89,11 +101,11 @@ export default function Create(){
                 { label: 'Nova Transação'}
               ]}
             />
-            <h1>Nova Transação</h1>
+            <S.Title>Nova Transação</S.Title>
             <form onSubmit={handleSubmit}>
                 <div>
-                    <label htmlFor="descricao">Descrição:</label>
-                    <input
+                    <S.Label htmlFor="descricao">Descrição:</S.Label>
+                    <S.Input
                         id="descricao"
                         type="text"
                         value={descricao}
@@ -102,8 +114,8 @@ export default function Create(){
                     />
                 </div>
                 <div>
-                    <label htmlFor="valor">Valor:</label>
-                    <input
+                    <S.Label htmlFor="valor">Valor:</S.Label>
+                    <S.Input
                         id="valor"
                         type="number"
                         step="0.01"
@@ -113,8 +125,8 @@ export default function Create(){
                     />
                 </div>
                 <div>
-                    <label htmlFor="tipo">Tipo:</label>
-                    <select
+                    <S.Label htmlFor="tipo">Tipo:</S.Label>
+                    <S.Select
                         id="tipo"
                         value={tipo}
                         onChange={(e) => {
@@ -125,11 +137,11 @@ export default function Create(){
                     >
                         <option value="Despesa">Despesa</option>
                         <option value="Receita">Receita</option>
-                    </select>
+                    </S.Select>
                 </div>
                 <div>
-                    <label htmlFor="categoria">Categoria:</label>
-                    <select
+                    <S.Label htmlFor="categoria">Categoria:</S.Label>
+                    <S.Select
                         id="categoria"
                         value={categoria}
                         onChange={(e) => setCategoria(e.target.value)}
@@ -141,11 +153,11 @@ export default function Create(){
                                 {cat.descricao}
                             </option>
                         ))}
-                    </select>
+                    </S.Select>
                 </div>
                 <div>
-                    <label htmlFor="pessoaId">Pessoa:</label>
-                    <select
+                    <S.Label htmlFor="pessoaId">Pessoa:</S.Label>
+                    <S.Select
                         id="pessoaId"
                         value={pessoaId}
                         onChange={(e) => setPessoaId(parseInt(e.target.value))}
@@ -157,17 +169,17 @@ export default function Create(){
                                 {pessoa.nome}
                             </option>
                         ))}
-                    </select>
+                    </S.Select>
                 </div>
-                <div>
+                <div style={{marginBottom: 10}}>
                     Obs: Menores de 18 anos só podem criar despesas.
                 </div>
-                <button type="submit" disabled={loading}>
+                <S.Button type="submit" disabled={loading}>
                     {loading ? 'Salvando...' : 'Salvar'}
-                </button>
+                </S.Button>
 
-                {error && <p style={{ color: 'red' }}>{error}</p>}
+                {error && <S.ErrorMessage>{error}</S.ErrorMessage>}
             </form>
-        </div>
+        </S.Container>
     )
 }
