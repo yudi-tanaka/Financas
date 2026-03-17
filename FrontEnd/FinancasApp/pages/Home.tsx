@@ -1,4 +1,5 @@
 import { useNavigate } from 'react-router-dom'
+import * as S from '../style/style'
 
 
 export default function Home() {
@@ -9,13 +10,15 @@ export default function Home() {
     }
 
     return (
-        <div>
-            <h1>Finanças</h1>
-            <button onClick={() => goTo('Pessoa')}>Pessoas</button>
-            <button onClick={() => goTo('Categoria')}>Categorias</button>
-            <button onClick={() => goTo('Transacao')}>Transações</button>
-            <button onClick={() => goTo('Relatorio/porpessoa')}>Relatório por Pessoa</button>
-            <button onClick={() => goTo('Relatorio/porcategoria')}>Relatório por Categoria</button>
-        </div>
+        <S.Container>
+            <S.Title>Finanças</S.Title>
+            <S.DisplayFlex>
+                <S.Button onClick={() => goTo('Pessoa')}>Pessoas</S.Button>
+                <S.Button onClick={() => goTo('Categoria')}>Categorias</S.Button>
+                <S.Button onClick={() => goTo('Transacao')}>Transações</S.Button>
+                <S.Button onClick={() => goTo('Relatorio/porpessoa')}>Relatório por Pessoa</S.Button>
+                <S.Button onClick={() => goTo('Relatorio/porcategoria')}>Relatório por Categoria</S.Button>
+            </S.DisplayFlex>
+        </S.Container>
     )
 }
